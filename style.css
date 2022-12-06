@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=K2D:ital,wght@1,500&family=Roboto:ital,wght@0,300;1,300&family=Shizuru&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contianer {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  width: 350px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contianer h2 {
+  background-color: rgb(249, 247, 255);
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 2px solid rgb(216, 216, 216);
+}
+
+form {
+  padding: 15px 20px;
+}
+
+.form-ctrl {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-ctrl i {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  visibility: hidden;
+}
+
+.form-ctrl small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-ctrl label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-ctrl input {
+  border: 2px solid rgb(177, 177, 177);
+  font-size: 15px;
+  border-radius: 3px;
+  display: block;
+  font-family: inherit;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-ctrl input::placeholder {
+  font-size: 13.5px;
+  color: rgb(206, 206, 206);
+}
+
+.form-ctrl.seccess input {
+  border-color: rgb(191, 221, 191);
+}
+
+.form-ctrl.error input {
+  border-color: rgb(226, 188, 188);
+}
+
+.form-ctrl.seccess i.fa-check-circle {
+  visibility: visible;
+  color: rgb(126, 255, 126);
+}
+
+.form-ctrl.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: rgb(255, 118, 118);
+}
+
+.form-ctrl.error small {
+  visibility: visible;
+  color: rgb(255, 118, 118);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #446196;
+  border: 2px solid #17366b;
+  color: white;
+  border-radius: 3px;
+}
